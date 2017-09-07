@@ -1,0 +1,15 @@
+body {
+  font-family: 'Slabo 27px', serif;
+}
+#myheader, h1 {
+  color: #FF0000;
+}
+.myclass {
+  font-size: 25px;
+}
+.myclass a {
+  color: limegreen;
+}
+.myclass a:hover {
+  color: yellow;
+}
