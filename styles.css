@@ -1,15 +1,39 @@
 body {
-  font-family: 'Slabo 27px', serif;
+  font-family: Times, sans-serif;
+  background-color: #e8e8e8;
 }
-#myheader, h1 {
-  color: #FF0000;
+#header1, h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 10px;
+  color: #8977d9;
+  margin: 50px 0px 20px 20px;
 }
-.myclass {
+#header2, h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 10px 0px 10px 20px;
+  color: #8977d9;
 }
-.myclass a {
-  color: limegreen;
+
+h3, p {
+  font-family: "Rokkitt", serif;
+  font-size: 15px;
+  margin: 70px 0px 10px 60px;
 }
-.myclass a:hover {
-  color: yellow;
+
+.content {
+  height: 200px;
+  margin: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+    opacity: .5;
 }
