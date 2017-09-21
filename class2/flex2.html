@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Advanced Layouts: Flex</title>
+    <title>Advanced Layouts: Flex 2</title>
     <link href="../normalize.css" rel="stylesheet" />
     <link href="class2.css" rel="stylesheet"/>
     <style>
@@ -19,7 +19,12 @@
         background-color: #00FFF0;
         flex-direction: column;
       }
-      
+
+      @media(max-width: 600px) {
+        #content {
+          flex-direction: column-reverse;
+        }
+
     </style>
   </head>
 
