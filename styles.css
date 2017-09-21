@@ -37,7 +37,8 @@ a {
 }
 a:hover {
     opacity: .5;
+
 }
 a:visited {
-  text-decoration: none;
+  color: green;
 }
