@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class 7</title>
+  <!-- <link href="../normalize.css" rel="stylesheet" /> -->
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    /*tr selects every table row, nth child takes every child (every odd child) that's inside of tbody and thead*/
+    tr:nth-child(odd) {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+  <!-- jquery code that was pasted in -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      const thereAreDogs = true;
+      const thereAreCats = false;
+
+      //if something is true it will be logged out as true in console
+      // && - and     || - or
+      if (thereAreDogs || thereAreCats) {
+      console.log("There are Dogs and cats!");
+    } else if (thereAreDogs) {
+      console.log("Just Dogs");
+    } else if (thereAreCats) {
+      console.log("Just Cats")
+    } else {
+      console.log("No animals");
+    }
+
+    const typeOfBirds = ["Parrot", "Finch", "Dirt Bird", "Pigeon", "Grackel", "Crow", "Kiwi", "Cardinal", "Chicken"];
+    let i = 0;
+    // continue to loop as long as there are birds in the list and 0 < 9, when i = 3 it will equal Pigeon
+    // when i equals 9 it is not less than 9 so it breaks the loop
+    for (i = 0; i < typeOfBirds.length; i++){
+    const bird = typeOfBirds[i];
+    console.log(bird);
+    console.log(length);
+
+    const birdRow = document.createElement('tr');
+    const birdName = document.createElement('td');
+    birdName.innerText = bird;
+    // append adds the list of birdNames to the physical table list
+    birdRow.append(birdName);
+
+    // "<td>6</td>"
+    // when wrapped in jquery it will get rid of the html
+    $(birdRow).append("<td>"+bird.length+"</td>");
+    // $(birdRow).append(`<td>$(bird.length)</td>`);
+
+    $("table tbody").append(birdRow);
+
+
+    // const birdColumn = document.createElement('tr');
+    // const birdLength = document.createElement('th');
+    // birdLength.innerText = length;
+    // birdColumn.append(birdLength);
+    //
+    // $("table tbody").append(birdColumn);
+
+  }
+  console.log("loop is done!");
+});
+  </script>
+</head>
+
+<body>
+  <h1>Tables</h1>
+
+  <table border="1">
+    <!-- Use th in thead -->
+    <thead>
+      <tr>
+        <th>Bird</th>
+        <th>Length</th>
+      </tr>
+    </thead>
+
+    <!-- Use td in tbody -->
+    <tbody>
+    </tbody>
+  </table>
+
+</body>
+
+
+</html>
