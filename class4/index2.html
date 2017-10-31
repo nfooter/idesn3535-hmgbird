@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class 4</title>
+    <script>
+    const me = "Nicole";
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Hello</h1>
+    <a href="colors.html">Colors</a>
+
+    <script> // This is added here because it needs access to h1 which is not in the head
+
+    const h1s = document.getElementsByTagName('h1');
+    h1s[0].innerText = "Hello, " + me; // innerText sets the text of the inside of the text
+
+    </script>
+
+
+
+  </body>
+</html>

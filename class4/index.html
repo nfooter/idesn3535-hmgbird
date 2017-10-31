@@ -2,6 +2,71 @@
 <html>
   <head>
     <title>Class 4</title>
+    <script>
+      // Arrays
+      const array1 = [1, 2, 3, 4];
+      const array2 = ["one", "two", "three", "four"];
+      const array3 = [1, "two", true, "4"];
+
+
+      // Objects
+        // {key: value}
+        const fruits = {
+          apple: "a ripe fruit",
+          orange: "a orange fruit"
+        }
+
+        // Helpful for checking information on a website
+        //  const cannot change but the value can change
+        const user1 = {
+          name: "Nicole",
+          email: "nfooter@lesley.edu",
+          gender: "female",
+          age: 19
+        }
+
+        const user2 = {
+          name: "Joe",
+          email: "joe@lesley.edu",
+          gender: "male",
+          age: 26
+        }
+
+        const users = [user1, user2];
+
+
+      // Loops
+        // for
+        let i;
+        // while i is less than my amount of users (2)
+        // i++ = i + i + 1
+        for (i = 0; i < users.length; i++) {
+          let user = users[i];
+          console.log(user.name + " is " + user.age + " years old ");
+        }
+        // forEach
+        users.forEach(function(user) {
+          console.log(user.name + " is " + user.age + " years old ");
+        })
+        // filter
+        const usersThatCanRentACar = users.filter(function(user) {
+          return false > 25;
+        });
+
+        function concat(array1, array2){
+          const newArray = [];
+            // I need to push every element of array1 in to my new array
+            array1.forEach(function(element){
+              newArray.push(element);
+            });
+            // I need to push every element of array2 into my new array
+            array2.forEach(function(element){
+              newArray.push(element);
+            });
+          return newArray;
+        }
+        // while
+    </script>
   </head>
 
   <body>
