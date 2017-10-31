@@ -1,0 +1,97 @@
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+#sign-up {
+  background-color: #8560a8;
+  height: 75px;
+  width: 100%;
+}
+
+#center {
+	margin: auto;
+	width: 657px;
+	padding: 20px;
+}
+
+.email {
+	background-color: #a1a1a1;
+  height: 33px;
+  width: 410px;
+	display: inline-block;
+	margin: auto;
+}
+
+.form {
+	background-color: #818181;
+  height: 33px;
+  width: 192px;
+	display: inline-block;
+	margin: auto;
+
+}
+
+#header {
+  display: flex;
+  background-color: #a864a8;
+  height: 80px;
+  width: 100%;
+}
+
+#main-page {
+  display: grid;
+  grid-template-rows: repeat(8, 12.5%);
+  background-color: #f06eaa;
+  height: 650px;
+  width: 100%;
+}
+
+#content {
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-row: 3;
+}
+
+.big-text {
+  display: grid;
+  background-color: #fbaf5d;
+  height: 100px;
+  grid-column: 2 / span 1;
+}
+
+#button {
+  display: grid;
+  height: 50px;
+  grid-template-columns: repeat(10, 10%);
+  grid-row: 6;
+  }
+
+.small-text {
+  display: grid;
+  background-color: #f26c4f;
+  height: 50px;
+}
+
+#one{
+  grid-column: 5 / span 1;
+  margin: 0px 20px 0px 0px;
+}
+
+#two {
+  grid-column: 6 / span 1;
+  margin: 0px 0px 0px 20px;
+}
+
+#second-page {
+    display: grid;
+    grid-template-rows: repeat(8, 12.5%);
+    background-color: #f26d7d;
+    height: 650px;
+    width: 100%;
+  }
