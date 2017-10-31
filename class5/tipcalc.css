@@ -1,0 +1,56 @@
+* {
+  font-family: "Avenir";
+
+}
+
+#container {
+  background-color: #333333;
+  width: 500px;
+  height: 700px;
+  padding: 10px;
+}
+#smallercon {
+  background-color: #333333;
+  width: 475px;
+  height: 675px;
+  padding: 10px 10px 10px 50px;
+  margin: auto;
+  border: 5px solid #FBB03B;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-color: #39B54A;
+  border: none;
+  color: white;
+   text-align: center;
+   font-size: 16px;
+   display: inline-block;
+   margin: 10px;
+
+}
+
+
+h1 {
+  font-size: 24pt;
+  font-weight: lighter;
+  color: #FBB03B;
+  margin: 25px;
+}
+
+.field {
+  font-size: 18pt;
+  font-weight: bolder;
+  color: #FBB03B;
+
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    height: 60px;
+    width: 50%;
+    display: block;
+    font-size: 24pt;
+}

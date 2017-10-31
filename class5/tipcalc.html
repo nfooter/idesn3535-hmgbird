@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>spooky tip calculator</title>
+    <link href="tipcalc.css" rel="stylesheet" />
+    <link href="../normalize.css" rel="stylesheet" />
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="container">
+        <div id="smallercon">
+      <h1>spooky tip calculator</h1>
+      <div id="bill" class="field"> Bill Amount
+        <input type="text" id="bill-total" />
+      </div>
+
+
+      <div id="subtractbutton"><button class="button">-</button></div>
+        <script>
+          //let tipPercent = 20;
+          const subtractButton = document.getElementById("subtractbutton");
+          function calculate(){
+            console.log(tipPercent)
+            }
+          subtractButton.addEventListener('click', function(){
+          tipPercent -= 1;
+          calculate()
+            })
+        </script>
+
+        <div id="resultDiv" class="field"></div>
+
+
+      <div id="addbutton"><button class="button">+</button></div>
+        <script>
+          let tipPercent = 20;
+          const addButton = document.getElementById("addbutton");
+          function calculate(){
+            console.log(tipPercent);
+            }
+          addButton.addEventListener('click', function(){
+          tipPercent += 1;
+          calculate()
+            })
+
+        document.getElementById("resultDiv").innerHTML=(tipPercent);
+
+        </script>
+
+      <!-- <div id="total"></div> -->
+      <div id="percent" class="field">Tip Amount
+        <input type="text" id="tip-amount" readonly />
+      </div>
+
+      <div id="final" class="field">Total Amount
+        <input type="text" id="total-amount" readonly/>
+      </div>
+
+
+</div>
+      </div>
+
+  </body>
+</html>
