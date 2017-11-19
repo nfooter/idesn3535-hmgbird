@@ -26,8 +26,18 @@
   color: white;
    text-align: center;
    font-size: 16px;
-   display: inline-block;
    margin: 10px;
+
+}
+#resultDiv {
+  display: inline-block;
+}
+#subtractbutton{
+  display: inline-block;
+}
+
+#addbutton {
+  display: inline-block;
 
 }
 
@@ -43,7 +53,7 @@ h1 {
   font-size: 18pt;
   font-weight: bolder;
   color: #FBB03B;
-
+  padding: 20px 0px 20px 0px;
 }
 
 input {
