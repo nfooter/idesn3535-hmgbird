@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New York Times</title>
+    <link href="../normalize.css" rel="stylesheet" />
+    <style>
+
+      li {
+        list-style-type: none;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      body {
+        font-family: "Helvetica Neue";
+        font-weight: lighter;
+        font-size: 15px;
+      }
+
+      h2 {
+        font-family: "Helvetica Neue";
+        font-weight: bold;
+        /*text-decoration: underline #ffeb39;
+        text-decoration-style: solid 5px;*/
+        border-bottom: 1px solid #ffeb39;
+      }
+
+      .pub-date {
+        font-family: "Avenir";
+      }
+
+      img {
+        width: 200px;
+
+      }
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+      var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+
+      var apiKey = "489be8166819407f9ff50f847e89cc5e";
+
+      $.ajax({
+        url: url,
+        data: {
+          'api-key': apiKey
+        },
+        success: function(result){
+          const articles = result.response.docs;
+
+          const articleList = document.createElement('ul');
+          $("#main").append(articleList);
+
+          articles.forEach(function(article){
+            const articleItem = document.createElement('li');
+
+            // make sure there are images and that the first element is an image
+            if (article.multimedia.length > 0 && article.multimedia[0].type === "image"){
+              const articleImage = document.createElement('img');
+              // these are relative urls, so we need to prepend nytimes.com
+              articleImage.src = "https://nytimes.com/" + article.multimedia[0].url;
+              articleItem.append(articleImage);
+              articleItem.classList.add('has-image');
+            }
+
+            const articleHeader = document.createElement('h2');
+            articleHeader.innerHTML = article.headline.main;
+            articleItem.append(articleHeader);
+
+            articleList.append(articleItem);
+
+          const articleSummary = document.createElement('p');
+          articleSummary.innerHTML = article.snippet;
+          articleItem.append(articleSummary);
+
+          const pubDate = document.createElement('div');
+          pubDate.classList.add('pub-date');
+          pubDate.innerText = new Date(article.pub_date)
+          articleItem.append(pubDate);
+        });
+          // console.log(result); THIS WAS TO CHECK IF IT WORKED
+        },
+        error: function(err){
+          throw err;
+        }
+      })
+    });
+    </script>
+  </head>
+
+  <body>
+    <div id="main"></div>
+
+
+  </body>
+</html>

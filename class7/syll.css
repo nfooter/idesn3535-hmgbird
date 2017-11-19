@@ -1,11 +1,71 @@
+a {
+    background-color: #376996;
+    color: white;
+    padding: 15px 25px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+a li {
+  list-style-type: none;
+}
+
+a:hover {
+  background-color: #3e8cff ;
+}
+
+#syll2 {
+  display: inline-block;
+  font-family: "Andara Script";
+  font-size: 40px;
+  background-color: #f06456;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 0px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#syll2:hover {
+  background-color: #ff5e4e;
+
+}
+
+#sched {
+  font-family: "Avenir";
+  margin: 50px 20px 20px 20px;
+}
+
 table {
   border-collapse: collapse;
-  background-color: 
+  border: none;
+  font-family: "Avenir";
+  color: #3D3D3D;
+}
+
+tr:nth-child(odd) {
+  background-color: #c4e7ce;
 }
 
 th {
-  background-color: #f4f677;
+  background-color: #4E878C;
   color: white;
-  border: none;
   padding: 15px;
+}
+
+td {
+font-weight: bold;
+}
+
+td ul {
+  list-style-type: circle;
+  color: #4d4d4d;
+  font-weight: lighter;
+}
+
+li {
+  list-style-type: none;
 }
