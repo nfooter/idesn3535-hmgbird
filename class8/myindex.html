@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>myindex</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="template-engine.js"></script>
+    <link href="../normalize.css" rel="stylesheet" />
+
+    <script>
+    $(document).ready(function() {
+      console.log(processTemplate(testString, testContext));
+      const testTemplate = getTemplate(testString, testContext);
+      console.log(testTemplate)
+      //already defined in template engine
+      $("body").prepend(testTemplate);
+      //prepend adds it to the top
+    });
+    </script>
+
+  </head>
+
+  <body>
+    <p>This is my homepage.</p>
+  </body>
+  
+</html>

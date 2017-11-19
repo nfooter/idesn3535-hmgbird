@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../normalize.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="template-engine.js"></script>
+    <script src="template.js.html"></script>
+
+    <script>
+    $(document).ready(function() {
+      $("body").prepend(getTemplate(headerTemplate, {class: 'blog', title: 'Blog'}) );
+      $("body").append(getTemplate(footerTemplate, {class: 'footer', title: 'Footer'}) );
+    });
+    </script>
+  </head>
+
+  <body>
+    <p>This is some information about the BLOG page</p>
+  </body>
+</html>

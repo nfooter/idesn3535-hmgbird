@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage</title>
+
+    <style></style>
+    <link href="../normalize.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        //if count is undefined \\ means or so it goes to 0 if it's not set
+        //this makes it so when you refresh the number you left off at stays the same
+        let count = localStorage.getItem('count') || 0;
+
+        function updateCount() {
+          $('#count').text(count);
+          //argument 'count', storing it to local storage with the key of count
+          localStorage.setItem('count', count);
+        }
+
+        $("#down").on('click', function(){
+          count--;
+          // double subtract means take away 1
+          updateCount();
+        });
+
+        $("#up").on('click', function(){
+          count++;
+          // double plus means add 1
+          updateCount();
+        });
+
+
+        updateCount();
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Local Storage</h1>
+    <div id="count"></div>
+
+    <button id="down">Down</button>
+    <button id="up">Up</button>
+  </body>
+</html>
