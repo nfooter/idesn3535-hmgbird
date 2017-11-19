@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 1309 375 667">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iPhone_6_7_1);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #646464;
+      }
+
+      .cls-2 {
+        font-size: 27px;
+        font-family: Georgia;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ccc;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        font-size: 5px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-iPhone_6_7_1">
+      <rect y="1309" width="375" height="667"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_6_7_1" data-name="iPhone 6/7 – 1" class="cls-1">
+    <rect class="cls-7" y="1309" width="375" height="667"/>
+    <g id="Header" transform="translate(-227.01 1547.977)">
+      <text id="Welcome_to_Hogwarts" data-name="Welcome to Hogwarts" class="cls-2" transform="translate(414.629 25)"><tspan x="-131.77" y="0">Welcome to Hogwarts</tspan></text>
+      <g id="Button" transform="translate(372.704 65.253)">
+        <g id="Rectangle_1" data-name="Rectangle 1" class="cls-3">
+          <rect class="cls-5" width="94.799" height="28.936" rx="4"/>
+          <rect class="cls-6" x="1" y="1" width="92.799" height="26.936" rx="3"/>
+        </g>
+        <text id="Enter" class="cls-4" transform="translate(43.771 15.851)"><tspan x="-6.39" y="0">Enter</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

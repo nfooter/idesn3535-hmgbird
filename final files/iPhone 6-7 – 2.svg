@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2120 1309 375 667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-iPhone_6_7_2);
+      }
+
+      .cls-3, .cls-7 {
+        fill: #646464;
+      }
+
+      .cls-3 {
+        font-size: 27px;
+        font-family: Georgia;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: #ccc;
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        font-size: 10px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="271.5" height="181.064"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" width="125.5" height="77.064"/>
+    </clipPath>
+    <clipPath id="clip-iPhone_6_7_2">
+      <rect x="2120" y="1309" width="375" height="667"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_6_7_2" data-name="iPhone 6/7 – 2" class="cls-2">
+    <rect class="cls-9" x="2120" y="1309" width="375" height="667"/>
+    <text id="Choose_a_House:" data-name="Choose a House:" class="cls-3" transform="translate(2306 1573)"><tspan x="-99.378" y="0">Choose a House:</tspan></text>
+    <g id="Repeat_Grid_4" data-name="Repeat Grid 4" class="cls-4" transform="translate(2171.884 1615.653)">
+      <g transform="translate(-44.884 -294.653)">
+        <g id="Repeat_Grid_3" data-name="Repeat Grid 3" class="cls-5" transform="translate(44.884 294.653)">
+          <g transform="translate(-44.884 -294.653)">
+            <g id="Rectangle_242" data-name="Rectangle 242" class="cls-6" transform="translate(44.884 294.653)">
+              <rect class="cls-8" width="125.5" height="77.064" rx="4"/>
+              <rect class="cls-1" x="1" y="1" width="123.5" height="75.064" rx="3"/>
+            </g>
+          </g>
+        </g>
+        <text id="Gryffindor" class="cls-7" transform="translate(106.807 336.389)"><tspan x="-24.443" y="0">Gryffindor</tspan></text>
+      </g>
+      <g transform="translate(101.116 -294.653)">
+        <g id="Repeat_Grid_3-2" data-name="Repeat Grid 3" class="cls-5" transform="translate(44.884 294.653)">
+          <g transform="translate(-44.884 -294.653)">
+            <g id="Rectangle_242-2" data-name="Rectangle 242" class="cls-6" transform="translate(44.884 294.653)">
+              <rect class="cls-8" width="125.5" height="77.064" rx="4"/>
+              <rect class="cls-1" x="1" y="1" width="123.5" height="75.064" rx="3"/>
+            </g>
+          </g>
+        </g>
+        <text id="Slytherin" class="cls-7" transform="translate(106.807 336.389)"><tspan x="-21.394" y="0">Slytherin</tspan></text>
+      </g>
+      <g transform="translate(-44.884 -196.653)">
+        <g id="Repeat_Grid_3-3" data-name="Repeat Grid 3" class="cls-5" transform="translate(44.884 294.653)">
+          <g transform="translate(-44.884 -294.653)">
+            <g id="Rectangle_242-3" data-name="Rectangle 242" class="cls-6" transform="translate(44.884 294.653)">
+              <rect class="cls-8" width="125.5" height="77.064" rx="4"/>
+              <rect class="cls-1" x="1" y="1" width="123.5" height="75.064" rx="3"/>
+            </g>
+          </g>
+        </g>
+        <text id="Hufflepuff" class="cls-7" transform="translate(106.807 336.389)"><tspan x="-23.604" y="0">Hufflepuff</tspan></text>
+      </g>
+      <g transform="translate(101.116 -196.653)">
+        <g id="Repeat_Grid_3-4" data-name="Repeat Grid 3" class="cls-5" transform="translate(44.884 294.653)">
+          <g transform="translate(-44.884 -294.653)">
+            <g id="Rectangle_242-4" data-name="Rectangle 242" class="cls-6" transform="translate(44.884 294.653)">
+              <rect class="cls-8" width="125.5" height="77.064" rx="4"/>
+              <rect class="cls-1" x="1" y="1" width="123.5" height="75.064" rx="3"/>
+            </g>
+          </g>
+        </g>
+        <text id="Ravenclaw" class="cls-7" transform="translate(106.807 336.389)"><tspan x="-25.847" y="0">Ravenclaw</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
