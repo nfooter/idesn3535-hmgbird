@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <head>
+    <title>Tutorials for class</title>
+    <link href="../normalize.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <style>
+    /*  This is how you make a sticky header that stays at the top when you scroll  */
+      header {
+        background: #FF0000;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 250ms;
+      }
+      header.hidden {
+        top: -60px;
+      }
+      body {
+        padding-top: 60px;
+      }
+      #sidebar {
+        background: #00FF00;
+        width: 50px;
+        height: 250px;
+        position: absolute;
+        margin: 10px;
+        transition: top 25ms ease-in;
+        font-size: 36px;
+      }
+
+      #sidebar > div {
+        transform: rotateZ(-90deg) translateX(-100px);
+
+      }
+    </style>
+
+    <script>
+      $(document).ready(function() {
+        let previousScrollTop = 0;
+
+        function updateSidebar(){
+          if ($('header').hasClass('hidden')){
+          $("#sidebar").css("top", $(document).scrollTop());
+        } else {
+          $("#sidebar").css("top", $(document).scrollTop() + 60);
+        }
+      }
+
+        $(document).on('scroll', function(e){
+          updateSidebar();
+
+          let currentScrollTop = $(document).scrollTop()
+          if (currentScrollTop > previousScrollTop){
+            $('header').addClass('hidden');
+          } else {
+            $('header').removeClass('hidden');
+          }
+          previousScrollTop = currentScrollTop;
+        })
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <header>Class stuff</header>
+    <div id="sidebar">
+      <div>Sidebar</div>
+    </div>
+    <p> Enamel pin humblebrag cray hoodie. Flexitarian chicharrones mustache fixie next level venmo, knausgaard viral gochujang 90's stumptown prism taiyaki sartorial. Tbh master cleanse drinking vinegar, four dollar toast intelligentsia freegan cred literally gluten-free activated charcoal. Affogato raw denim prism gochujang, green juice neutra forage distillery ugh yr twee. Wayfarers dreamcatcher etsy +1 VHS artisan locavore fashion axe franzen. Glossier distillery tattooed, small batch meggings cliche wolf ramps. Raw denim yuccie artisan, copper mug jianbing succulents everyday carry church-key tote bag wolf. Irony gluten-free meditation copper mug, ramps try-hard vinyl mixtape cred sustainable helvetica taxidermy. Woke tbh heirloom drinking vinegar chillwave cronut. Humblebrag activated charcoal post-ironic, leggings forage street art gentrify la croix beard cray. Jianbing cray flannel four dollar toast kitsch sriracha PBRB post-ironic umami narwhal thundercats cloud bread.</p>
+
+    <p>Truffaut air plant jean shorts lumbersexual art party knausgaard PBRB echo park bitters chillwave locavore polaroid man braid. Lyft vinyl church-key pug migas, hot chicken cliche williamsburg organic shaman scenester hoodie. Pour-over irony organic, four dollar toast la croix hot chicken shabby chic neutra lomo fashion axe locavore succulents. Mlkshk taiyaki umami, tousled pork belly microdosing knausgaard shaman enamel pin pitchfork. Taiyaki listicle slow-carb twee retro wolf, brooklyn paleo distillery. Bushwick sustainable mixtape chia chicharrones. DIY taiyaki chia kombucha fam ennui YOLO readymade. Celiac polaroid helvetica, cliche sartorial biodiesel paleo. Pork belly chia coloring book portland beard fanny pack. Synth master cleanse etsy keytar subway tile. Brunch woke XOXO food truck tattooed, messenger bag retro yuccie blog. Lo-fi food truck selfies butcher unicorn, microdosing af paleo. Wolf woke forage man bun, meh everyday carry +1 street art drinking vinegar meditation normcore beard green juice chartreuse crucifix. Gentrify microdosing yuccie hoodie live-edge meditation, vaporware small batch etsy tofu cliche tumeric bespoke kinfolk pork belly. Af wayfarers meggings quinoa, neutra cloud bread lyft +1 health goth poutine leggings hella plaid austin bicycle rights.</p>
+
+    <p>Salvia kale chips drinking vinegar adaptogen cornhole, DIY craft beer keytar retro. Artisan fashion axe bushwick, waistcoat yuccie slow-carb letterpress ramps vape paleo meditation tote bag migas offal VHS. Truffaut shaman twee hoodie. Drinking vinegar 90's coloring book pinterest ugh. Freegan ugh small batch blog squid austin biodiesel yuccie taxidermy keytar art party tumblr. Brunch messenger bag church-key fingerstache glossier meditation palo santo, lomo aesthetic cred. Cornhole try-hard tacos af, keytar la croix post-ironic kinfolk fashion axe flannel disrupt forage. Cold-pressed meggings snackwave, everyday carry kale chips chartreuse paleo man braid brooklyn hot chicken slow-carb pabst photo booth. Fixie photo booth thundercats edison bulb. Copper mug four loko forage scenester pok pok hella bitters coloring book. Green juice chambray VHS mlkshk, paleo ennui pitchfork synth cronut offal jianbing.</p>
+
+    <p>Lyft woke venmo thundercats offal brooklyn. Neutra austin ugh chia, portland YOLO synth bespoke cornhole man braid cardigan pinterest photo booth vexillologist pour-over. Synth kinfolk blog, subway tile affogato street art ennui actually pok pok pour-over. Narwhal biodiesel tousled literally vape aesthetic typewriter bespoke chartreuse photo booth 90's unicorn quinoa hell of. Microdosing flannel hell of shabby chic tousled. Austin kale chips retro thundercats hexagon keffiyeh hoodie brunch fashion axe. DIY brooklyn pinterest, snackwave kale chips 8-bit hell of tumeric mixtape fam scenester ennui kickstarter. Hashtag blog keffiyeh next level, green juice hella subway tile listicle portland gochujang vegan sartorial small batch shoreditch edison bulb. Listicle bushwick swag, organic +1 edison bulb pok pok fashion axe. Pitchfork tumeric cred pork belly master cleanse blog ugh single-origin coffee XOXO meditation kinfolk typewriter locavore. Single-origin coffee kogi raw denim mixtape gastropub typewriter, 8-bit meditation paleo occupy artisan intelligentsia green juice franzen poutine. Trust fund glossier kitsch authentic tousled, ethical raw denim. Neutra asymmetrical poutine cornhole mlkshk truffaut</p>
+
+    <p>Bushwick food truck normcore ethical occupy letterpress portland wayfarers coloring book keffiyeh. Schlitz +1 wayfarers chia hoodie tattooed single-origin coffee raclette mumblecore dreamcatcher artisan organic franzen. Hammock kombucha heirloom tumblr. Vegan flannel disrupt lyft ennui, glossier waistcoat copper mug kombucha cray hella venmo. Bespoke typewriter meditation viral whatever pork belly. Bushwick tumblr beard cornhole, paleo keffiyeh succulents poke four dollar toast health goth drinking vinegar waistcoat letterpress. Gastropub viral blue bottle swag hammock 90's vape YOLO. Readymade cray cliche meh small batch jianbing whatever distillery blog DIY tattooed vinyl hell of. Street art chillwave single-origin coffee bushwick, aesthetic occupy slow-carb. Kitsch chartreuse pop-up crucifix. Tumeric paleo 90's gastropub lumbersexual, kinfolk banh mi lomo +1 green juice everyday carry gentrify. Taxidermy ennui PBRB synth gastropub, skateboard blue bottle. Readymade venmo keffiyeh yuccie.</p>
+
+    <p>Try-hard pickled raclette affogato, intelligentsia kinfolk DIY yr literally meggings stumptown venmo. Listicle you probably haven't heard of them poke hashtag echo park kickstarter heirloom plaid. Chia roof party neutra fixie +1 craft beer. Live-edge wayfarers cliche lomo pok pok. Shoreditch hammock tousled hexagon bushwick coloring book street art. Wayfarers marfa godard fashion axe enamel pin artisan. Flannel plaid humblebrag, pok pok typewriter cloud bread XOXO cornhole tousled cold-pressed roof party iPhone. Disrupt XOXO pop-up mlkshk gentrify palo santo adaptogen aesthetic paleo tbh farm-to-table af lumbersexual leggings pork belly. Vice you probably haven't heard of them woke forage man bun. Lo-fi schlitz raw denim cray edison bulb jianbing. Beard shabby chic hot chicken messenger bag typewriter. Fam aesthetic 90's blue bottle portland typewriter occupy venmo neutra photo booth poutine. PBRB truffaut chartreuse artisan.</p>
+
+    <p>Fam hell of tofu trust fund bespoke, heirloom yr shoreditch banjo +1 gastropub pork belly four loko palo santo vegan. Cronut migas art party cloud bread subway tile offal kickstarter pabst cred tumeric yr chicharrones taiyaki. Semiotics asymmetrical fashion axe, microdosing ugh thundercats banh mi taiyaki lomo roof party. Cray pickled poutine, man bun butcher YOLO mumblecore. Blog pabst etsy, tacos umami kale chips plaid crucifix microdosing twee put a bird on it tumeric swag hella. Meh hashtag beard subway tile lomo pour-over. Subway tile deep v palo santo chia cardigan sartorial. Meh taxidermy VHS, skateboard mumblecore farm-to-table adaptogen irony bicycle rights butcher vaporware shabby chic. Ramps kale chips kitsch art party.</p>
+
+    <p>Art party green juice farm-to-table disrupt. Slow-carb taiyaki ethical, coloring book irony scenester post-ironic copper mug. Coloring book copper mug squid cloud bread. Viral bitters cray wolf neutra sriracha, meditation meggings migas subway tile gluten-free pok pok keffiyeh. Portland chartreuse scenester austin umami messenger bag knausgaard occupy pitchfork jianbing church-key godard viral fixie kale chips. Bicycle rights venmo bushwick lomo. Beard actually brooklyn gluten-free XOXO slow-carb. Disrupt slow-carb lyft humblebrag poutine copper mug VHS thundercats bushwick plaid gochujang succulents kinfolk. Food truck 90's roof party butcher blue bottle, flexitarian direct trade flannel unicorn truffaut. Fashion axe twee truffaut actually pabst yr offal trust fund craft beer paleo tote bag. Cardigan disrupt gastropub vexillologist PBRB chillwave iPhone beard lo-fi distillery twee. Food truck 3 wolf moon mustache squid, flexitarian fanny pack shabby chic letterpress banjo crucifix woke yuccie kale chips viral leggings. Fixie food truck kickstarter, swag pabst bitters trust fund bespoke leggings health goth bicycle rights truffaut keytar adaptogen slow-carb. Actually art party poke tacos pop-up cloud bread. Chillwave cardigan vegan, brooklyn chartreuse poke knausgaard.</p>
+
+    <p>Flannel small batch kogi fam, coloring book chartreuse etsy. Green juice bushwick 8-bit yr neutra. Wayfarers chartreuse quinoa retro blue bottle raclette mustache vegan bushwick truffaut irony. Raclette you probably haven't heard of them meh palo santo, polaroid air plant fanny pack cred plaid craft beer whatever. Freegan austin lumbersexual beard jianbing health goth tilde hammock flannel hell of direct trade cred viral. Tilde green juice subway tile sartorial knausgaard brunch forage vice neutra flannel dreamcatcher intelligentsia. Pok pok subway tile messenger bag occupy. Shoreditch retro raclette organic pork belly. Literally vegan stumptown +1, glossier artisan kale chips jianbing photo booth mixtape unicorn portland hashtag. IPhone fashion axe pitchfork aesthetic raclette echo park put a bird on it knausgaard, hammock meggings. Lyft authentic fingerstache salvia, raw denim typewriter seitan lo-fi fashion axe pabst knausgaard.</p>
+
+    <p>Normcore yr prism salvia, air plant chambray gastropub stumptown DIY succulents. Austin slow-carb coloring book lomo hexagon, lumbersexual shoreditch ugh subway tile vape squid. Tbh kinfolk woke hashtag man bun beard. Plaid umami yr portland shabby chic street art tbh. Pitchfork seitan wolf, retro tousled williamsburg bicycle rights biodiesel before they sold out pok pok asymmetrical. Retro copper mug celiac art party marfa meditation 8-bit ennui roof party. Fanny pack taiyaki direct trade, cronut irony swag trust fund fixie mustache stumptown YOLO blue bottle. Ennui offal fam, neutra twee tilde actually before they sold out poke trust fund fashion axe. Plaid yuccie af gentrify four loko normcore messenger bag meh whatever brooklyn PBRB fashion axe cardigan trust fund cornhole. Hashtag pitchfork chicharrones YOLO la croix fanny pack swag listicle occupy, raw denim mustache normcore waistcoat. Photo booth raw denim 3 wolf moon unicorn blue bottle umami farm-to-table bicycle rights chicharrones brunch. Humblebrag mixtape pinterest adaptogen tumeric drinking vinegar offal 8-bit organic pitchfork XOXO you probably haven't heard of them beard. Occupy mumblecore polaroid vegan irony echo park aesthetic iPhone cronut. Scenester austin butcher deep v XOXO meggings leggings gluten-free lumbersexual thundercats cronut artisan. Organic green juice gluten-free twee, shabby chic tousled vinyl trust fund try-hard.</p>
+</p>
+  </body>
+
+
+
+
+</html>
