@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../normalize.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+$(document).ready(function() {
+  $("#myRange").on('change', function(){
+    // alert($(this).val());
+    $("#myValue").text($(this).val());
+  });
+});
+  </script>
+</head>
+<body>
+
+<input id="myRange" type="range" mine="8" max"10" step="1"/>
+<div id="myValue">
+
+</div>
+</body>
+</html>
