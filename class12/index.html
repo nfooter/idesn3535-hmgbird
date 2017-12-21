@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ratings API</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./stset.js"></script>
+    <script>
+      function renderRatings(){
+        $("#ratings").html("");
+        const ratings = getRatings().ratings;
+        let = totalStars = 0;
+        let totalRatings = 0;
+        ratings.forEach(function(r){
+          if (r){
+            //this is what you wanted for the bios
+            const row = document.createElement('div');
+            row.innerText = `Stars: ${r.stars} Comment: ${r.comment}`;
+            $("#ratings").append(row);
+            totalRatings++;
+            totalStars+= r.stars;
+          }
+        });
+        const averageRating = totalStars / totalRatings;
+        $("#average").text("Average: "+averageRating);
+        $("#allstars").css("width", (averageRating/5 * 100) + "%");
+      }
+      $(document).ready(function() {
+        renderRatings();
+        $("#rate-button").on('click', function(){
+        const starAmount = parseInt($("#my-dropdown").val());
+        const comment = $("#my-comment").val();
+        addRating({stars: starAmount, comment: comment});
+        renderRatings();
+        $("#my-comment").val("");
+        $("#my-dropdown").val("1");
+
+      });
+      });
+    </script>
+
+    <style>
+    #average-stars {
+      position: relative;
+      width: 84px;
+      height: 15px;
+    }
+
+    #nostars, #allstars {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #allstars {
+      overflow: hidden;
+      transition: width 1000ms;
+      width: 0%;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Ratings API</h1>
+
+    <div id="average"></div>
+    <div id="average-stars">
+      <div id="nostars"><img src="nostars.svg" /></div>
+      <div id="allstars"><img src="allstars.svg" /></div>
+
+    </div>
+
+    <div id="ratings"></div>
+    <!-- Dropdown menu with comments -->
+    <select id="my-dropdown">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <input id="my-comment" />
+    <button id="rate-button">Rate this!</button>
+
+
+  </body>
+
+</html>
